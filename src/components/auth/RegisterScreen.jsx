@@ -5,7 +5,6 @@ import validator from 'validator';
 import { useDispatch, useSelector } from 'react-redux'
 import { setError, unsetError } from "../../actions/ui";
 import { startRegisterWithEmailPasswordNname } from "../../actions/auth";
-import Swal from 'sweetalert2'
 
 
 const RegisterScreen = () => {
@@ -47,6 +46,7 @@ const RegisterScreen = () => {
     }
     return true;
   }
+
 
   return (
     <>
@@ -93,22 +93,7 @@ const RegisterScreen = () => {
         <button type="submit" className="btn btn-primary btn-block mb-5">
           Register
         </button>
-        <div className="auth__solcial-networks">
-          <p>Register with Social Networks</p>
-          <div className="google-btn">
-            <div className="google-icon-wrapper">
-              <img
-                className="google-icon"
-                src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                alt="google button"
-              />
-            </div>
-            <p className="btn-text">
-              <b>Sing up with google</b>
-            </p>
-          </div>
-        </div>
-
+        
         <Link to="/auth/login" className="link mt-5 mb-5">
           Already Register? Login
         </Link>
