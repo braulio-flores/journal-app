@@ -1,0 +1,12 @@
+$primary: #5C62C5;
+$dark-grey: #363636;
+$ligth-grey: #D8D8D8;
+
+.link{
+    text-decoration: none;
+    color: $dark-grey;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
